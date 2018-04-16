@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		/*初始化css*/
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image: url(images/bg.jpg);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: auto;
+			width: 100%;
+			height: 100%;
+		}
+		.main{
+			padding-top: 10vh;
+			height: 100vh;
+			opacity:0.5;
+			background-color:#000;
+			overflow: auto;
+		}
+		.title{
+			width:15%;
+			margin-left: auto;
+			margin-right: auto;
+			color: #000;
+			font-weight: 800;
+			color: #fff;
+		}
+		.form-group{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		button{
+			margin-top: 30px;
+		}
+	</style>
+	<title>用户留言板</title>
+</head>
+<body>
+	<div class="container-fluid">
+  		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 main">
+				<div class="title"><h1>留言板</h1></div>
+				<div class="form-group">
+				    
+				    <input type="text" class="form-control" id="name"   placeholder="请输入你的姓名">
+				</div>
+				<div class="form-group">
+				    <textarea class="form-control" placeholder="请输入留言内容" id="content" rows="10"></textarea>
+				</div>
+				<div class="form-group">
+					<button type="button" class="btn btn-lg btn-primary" id="tj" >提交</button>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+
+  		</div>
+	</div>
+	<!-- 引入jquery -->
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$("#tj").click(function() {
+			var name=$("#name").val();
+			var content=$("#content").val();
+			if(name==""){
+				alert("请输入姓名！")
+			}else if(content==""){
+				alert("请输入留言内容！")
+			}else{
+				alert("你的姓名为:"+name+"你的留言内容为："+content);
+			}
+			
+
+		})
+
+	</script>
+</body>
+</html>

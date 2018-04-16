@@ -1,0 +1,407 @@
+*,body{
+	margin: 0;
+	padding: 0;
+}
+/*中间主体内容*/
+.container{
+	margin-bottom: 100px;
+	width: 800px;
+	background-color: #f8f4eb;
+}
+.row{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear: both;
+}
+/*左边小块*/
+.right_span{
+	width: 80px;
+	height: 60px;
+	margin:40px 5px 0 -25px;
+	background-color: #494235;
+}
+
+/*中间主体内容*/
+.main{
+	padding-bottom: 20PX;
+}
+.logo{
+	height: 250px;
+	background-color:  #494235;
+	margin: 5px -27px 0  -70px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.logo .image{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-image: url(../images/my.jpg) ;
+	background-origin:padding-box;
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+
+.main .name{
+	height: 80px;
+	background-color: #eebe40;
+	margin: 0px -27px 0  -70px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.main .name span{
+	font-size: 40px;
+	color: #fff;
+	margin-left: auto; 
+	margin-right: auto;
+	font-weight: 800;
+
+}
+.per_introduction{
+	background-color:#494235;
+	margin: 0px -27px 0  -70px;
+	height: 100%;
+	padding-top: 20px;
+}
+.per_introduction .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.per_introduction .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/per.png);
+	background-origin:padding-box;
+	float: left;
+}
+.per_introduction .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 20px;
+}
+
+.per_introduction .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+.per_info{
+	background-color:#494235;
+	margin: 0px -27px 0  -70px;
+	height: 100%;
+	padding-top: 20px;
+}
+.per_info .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.per_info .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/jbxx.png);
+	background-origin:padding-box;
+	float: left;
+}
+.per_info .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 20px;
+}
+.line{
+	width: 90%;
+	height: 2px;
+	background-color: #63593D;
+	margin:0 5% 10px 5%;
+}
+.per_info .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #fff;
+	line-height: 20px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+
+.language_tec{
+	background-color:#494235;
+	margin: 0px -27px 0  -70px;
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.language_tec .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.language_tec .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/js.png);
+	background-origin:padding-box;
+	float: left;
+}
+.language_tec .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 20px;
+}
+
+.language_tec .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #fff;
+}
+.progress_item{
+
+}
+.progress_item .title{
+	margin: 0;
+	padding: 0;
+}
+.progress_item .progress{
+	
+}
+.progress-bar,.progress{
+	height: 10px;
+}
+/*右边内容*/
+.left_span{
+	height: 60px;
+	margin:40px -25px 0 0;
+	background-color: #494235;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+
+.left_span span{
+	font-size: 40px;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing:35px;
+}
+
+.left_main {
+	
+}
+.left_main  .line{
+	width: 90%;
+	height: 2px;
+	background-color: #63593D;
+	margin:0 5% 10px 10%;
+}
+.left_main .educational_background{
+
+}
+.left_main .educational_background{
+	margin-right: -20px;
+	height: 100%;
+	padding-top: 20px;
+}
+.left_main .educational_background .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.left_main .educational_background .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/jy.png);
+	background-color: #63593D;	
+	background-origin:padding-box;
+	float: left;
+}
+.left_main .educational_background .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #63593D;
+	font-weight: 900;
+	margin-left: 20px;
+}
+
+.left_main .educational_background .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #63593D;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+
+.left_main .campus_practice{
+	margin-right: -20px;
+	height: 100%;
+	padding-top: 5px;
+}
+.left_main .campus_practice .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.left_main .campus_practice .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/xnsj.png);
+	background-color: #63593D;	
+	background-origin:padding-box;
+	float: left;
+}
+.left_main .campus_practice .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #63593D;
+	font-weight: 900;
+	margin-left: 20px;
+}
+
+.left_main .campus_practice .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #63593D;
+	line-height:20px;
+}
+.left_main .campus_practice .contents .item .time{
+	font-weight: 800;
+}
+
+
+.left_main .award_experience{
+	margin-right: -20px;
+	height: 100%;
+	padding-top: 5px;
+}
+.left_main .award_experience .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.left_main .award_experience .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/gz.png);
+	background-color: #63593D;	
+	background-origin:padding-box;
+	float: left;
+}
+.left_main .award_experience .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #63593D;
+	font-weight: 900;
+	margin-left: 20px;
+}
+
+.left_main .award_experience .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #63593D;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+
+.left_main .personal_skills{
+	margin-right: -20px;
+	height: 100%;
+	padding-top: 5px;
+}
+.left_main .personal_skills .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.left_main .personal_skills .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/gz.png);
+	background-color: #63593D;	
+	background-origin:padding-box;
+	float: left;
+}
+.left_main .personal_skills .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #63593D;
+	font-weight: 900;
+	margin-left: 20px;
+}
+
+.left_main .personal_skills .contents{
+	width:80%;
+	margin: 5px 10%;
+	color: #63593D;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+
+.left_main .hobby{
+	margin-right: -20px;
+	height: 100%;
+	padding-top: 5px;
+}
+.left_main .hobby .title{
+	padding: 10px 20px;
+	display:flex;/*Flex布局*/
+    display: -webkit-flex; /* Safari */
+    align-items:center;/*指定垂直居中*/
+}
+.left_main .hobby .title .image{
+	width: 35px;
+	height: 35px;
+	border: 2px solid #63593D;
+	background-image: url(../images/ah.png);
+	background-color: #63593D;	
+	background-origin:padding-box;
+	float: left;
+}
+.left_main .hobby .title .title_world{
+	float: left;
+	font-size: 20px;
+	color: #63593D;
+	font-weight: 900;
+	margin-left: 20px;
+}
+.left_main .hobby .contents{
+	width:80%;
+	margin: 5px 10%;
+	text-align: center;
+}
+
+.left_main .hobby .contents .img{
+	
+	float: left;
+	margin-left: 5%;
+}
+
+
+
