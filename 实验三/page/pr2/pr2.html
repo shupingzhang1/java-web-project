@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container-fluid{
+			margin-top: 2vh;
+		}
+		.img img{
+			width: 40px;
+			height: 40px;
+		}
+
+		.add img,.jian img{
+			width:30px;
+			height: 30px;
+		}
+		.jian{
+			margin-left: 20px;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="alert alert-info title" role="alert">购物车</div>
+				<table class="table table-hover table1">
+					<tr class="active ">
+						<div class="row">
+							<th class=" col-md-2">编号</th>
+							<th class="col-md-2">图片</th>
+							<th class="col-md-2">名称</th>
+							<th class="col-md-2">价格</th>
+							<th class="col-md-1">数量</th>
+							<th class="col-md-2"></th>
+						</div>
+					</tr>
+					<tr class="book book1">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/1.jpg" alt=""></td>
+							<td class="name">Scala程序设计</td>
+							<td class="moneys">39</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(1)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(1)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book2">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/9.jpg" alt=""></td>
+							<td class="name">Effective Java</td>
+							<td class="moneys">54</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(2)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(2)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book3">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/10.jpg" alt=""></td>
+							<td class="name">How Tomcat Works</td>
+							<td class="moneys">28</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(3)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(3)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book4">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/8.jpg" alt=""></td>
+							<td class="name">Thinking in Java</td>
+							<td class="moneys">88</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(4)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(4)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book5">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/7.jpg" alt=""></td>
+							<td class="name">Clojure编程</td>
+							<td class="moneys">97</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(5)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(5)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book6">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/6.jpg" alt=""></td>
+							<td class="name">Java程序性能优化 </td>
+							<td class="moneys">35</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(6)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(6)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book7">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/5.jpg" alt=""></td>
+							<td class="name">Java编程思想</td>
+							<td class="moneys"> 48</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(7)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(7)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book8">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/4.jpg" alt=""></td>
+							<td class="name">结构与算法分析</td>
+							<td class="moneys">72</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(8)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(8)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book9">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/3.jpg" alt=""></td>
+							<td class="name">性能优化权威指南</td>
+							<td class="moneys">150</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(9)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(9)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book10">
+						<div class="row">
+							<td >1</td>
+							<td class="img"><img src="images/2.jpg" alt=""></td>
+							<td class="name">Effective Java</td>
+							<td class="moneys">13</td>
+							<td class="num">0</td>
+							<td >
+								<span class="add" onclick="add(10)"><img src="images/add.png" alt=""></span>
+								<span class="jian" onclick="jian(10)"><img src="images/j.png" alt=""></span>
+							</td>
+						</div>
+					</tr>
+					<tr class="book book10">
+						<div class="row">
+							<td >
+								<span>最高单价</span>
+								<span class="max"></span>
+							</td>
+							<td >
+								<span>最低单价</span>
+								<span class="min"></span>
+							</td>
+							<td >
+								<span>总价</span>
+								<span class="adds"></span>
+							</td>
+							<td >
+								<button class="btn btn-success" onclick="tj()">提交</button>
+							</td>
+							
+						</div>
+					</tr>
+				</table>
+			
+  			</div>
+  		</div>
+  	</div>
+  	<script>
+  		function add(b){
+  			var a=document.getElementsByClassName("num");  //数量
+  			var c=document.getElementsByClassName("name");  //名字
+  			var d=document.getElementsByClassName("moneys");  //价格
+  			var max=document.getElementsByClassName("max");
+  			var min=document.getElementsByClassName("min");
+  			var adds=document.getElementsByClassName("adds");
+			a[b-1].innerHTML=parseInt(a[b-1].innerHTML)+1;
+			var a=document.getElementsByClassName("num");  //数量
+			max[0].innerHTML="￥"+getMax(a,d);
+			min[0].innerHTML="￥"+getMin(a,d);
+			adds[0].innerHTML=addss(a,d);
+			
+  			
+  		}
+  		function jian(b){
+  			var a=document.getElementsByClassName("num");  //数量
+  			var c=document.getElementsByClassName("name");  //名字
+  			var d=document.getElementsByClassName("moneys");  //价格
+  			if(parseInt(a[b-1].innerHTML)!=0){
+  				a[b-1].innerHTML=parseInt(a[b-1].innerHTML)-1;
+  				var max=document.getElementsByClassName("max");
+	  			var min=document.getElementsByClassName("min");
+	  			var adds=document.getElementsByClassName("adds");
+	  			var a=document.getElementsByClassName("num");  //数量
+				max[0].innerHTML="￥"+getMax(a,d);
+				min[0].innerHTML="￥"+getMin(a,d);
+				adds[0].innerHTML=addss(a,d);
+  			}else{
+  				alert("最小为0！");
+  			}
+
+  		}
+  		function getMax(num,moneys){
+  			var max=0;
+  			for(var i=0;i<num.length;i++){
+  				
+  				if(num[i].innerHTML==0){
+
+  				}else{
+  					if(max<parseInt(moneys[i].innerHTML)){
+  						max=moneys[i].innerHTML;
+  						
+  					}
+  				}
+  			}
+  			return max;
+  		}
+  		function getMin(num,moneys){
+  			var min=200;
+  			for(var i=0;i<num.length;i++){
+  				
+  				if(num[i].innerHTML==0){
+
+  				}else{
+  					if(min>parseInt(moneys[i].innerHTML)){
+  						min=moneys[i].innerHTML;
+  					
+  					}
+  				}
+  			}
+  			return min;
+  		}
+  		function addss(num,moneys){
+  			var prize=0;
+  			for(var i=0;i<num.length;i++){
+  				
+  				if(num[i].innerHTML==0){
+
+  				}else{
+  					prize+=moneys[i].innerHTML*num[i].innerHTML;
+  				}
+  			}
+  			return prize;
+  		}
+  		function tj(){
+  			var adds=document.getElementsByClassName("adds");
+  			if(adds[0].innerHTML<99){
+  				var r=confirm("未满99元需支付邮费10元，确认现在结算吗？");
+				if (r==true){
+				  alert("总价格为￥"+adds[0].innerHTML);
+				}else{
+				  
+				 }
+			}else{
+				alert("总价格为￥"+adds[0].innerHTML);
+			}
+		}
+  	</script>
+	
+</body>
+</html>

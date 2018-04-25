@@ -1,0 +1,116 @@
+/*
+* @Author: zsp
+* @Date:   2018-04-10 16:07:40
+* @Last Modified by:   zsp
+* @Last Modified time: 2018-04-23 13:31:01
+*/
+.item1 a{
+	color: #1296db;
+}
+/*主体内容*/
+.contents{
+	width: 100%;
+	/*height: 84vh;*/
+	margin-top: 5vh;
+
+}
+.contents .pro_list{
+	
+	width: 100%;
+	/*height: 84vh;*/
+	/*background-color:    #f4f5f5;*/
+}
+.contents .pro_list .item { 
+	padding: 10px 20px;
+	border-bottom: 1px solid #fff;
+	background-color:#fff;
+	margin-top: 10px;
+	
+}
+.contents .pro_list .item:hover{
+	background-color: #ddd;
+}
+.contents .pro_list .item .title{
+	height: 5vh;
+	font-size:1.2em;
+	line-height: 5vh;
+	font-weight: 600;
+
+}
+.contents .pro_list  .title:hover{
+	text-decoration: underline;
+	color:#1296db;
+}
+.contents .pro_list .item .info{
+	color:#b2bac2;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	/*word-spacing: 2px;*/
+}
+.contents .pro_list .item .lib{
+	color: #b2bac2;
+	margin-left:10px;
+}
+.contents .pro_list .item  .dfl{
+	color: #b2bac2;
+}
+.contents .pro_list .item  .dfl:hover{
+	text-decoration: underline;
+	color:#1296db;
+}
+.contents .pro_list .item  .xfl{
+	color: #b2bac2;
+}
+.contents .pro_list .item  .xfl:hover{
+	text-decoration: underline;
+	color:#1296db;
+}
+.contents .pro_list .item  .read{
+	/*border: 1px solid #fff;*/
+	height: 1vh;line-height: 1vh;
+	padding: 0.5vh 1vh;
+}
+.contents .pro_list .item .info .read img{
+	width: 2vh;
+	height: 2vh;
+}
+.contents .right_list{
+	width: 100%;
+	
+	
+}
+.contents .right_list .item .time_list{
+	padding: 1vh 2vh;
+	background-color: #fff;
+}
+.contents .right_list .item .time_list .title{
+	width: 100%;
+	height: 4vh;
+	line-height: 4vh;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	margin-bottom: 1vh;
+}
+.contents .right_list .item .time_list .list{
+	height: 3vh;
+	line-height: 3vh;text-align: center;
+}
+.contents .right_list .item .time_list .time:hover{
+	text-decoration: underline;
+	color:#1296db;
+}
+.contents .right_list .item .lib_list,.link_list{
+	margin-top: 2vh;
+	padding: 1vh 2vh;
+	background-color: #fff;
+	text-align: center;
+}
+.contents .right_list .item .lib_list .title{
+	width: 100%;
+	height: 4vh;
+	line-height: 4vh;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	margin-bottom: 1vh;
+}
+

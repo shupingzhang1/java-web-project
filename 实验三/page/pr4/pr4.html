@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时间</title>
+	<style>
+		.date,.time{
+			width: 80px;
+			border: 1px solid #000;
+			padding: 20px 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="date" id="date"></div>
+	<div class="time" id="time"></div>
+	
+	<script>
+		startTime();
+		// 时间设置函数
+		function startTime(){
+			var today=new Date();
+			var day=today.getDay();
+			var days=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			var h=today.getHours()
+			var m=today.getMinutes()
+			var s=today.getSeconds()
+			m=checkTime(m)
+			s=checkTime(s)
+			document.getElementById('time').innerHTML=h+":"+m+":"+s+" "+days[day];
+			t=setTimeout('startTime()',500);
+			setTime();
+			}
+		// 年月日设置
+		function setTime(){
+			var today=new Date();
+			var date=today.getDate();
+			var month=today.getMonth()+1;
+			var year=today.getFullYear();
+			document.getElementById('date').innerHTML=year+"-"+month+"-"+date;
+			}
+		// 24小时格式
+		function checkTime(i){
+			if (i<10) 
+			{i="0" + i}
+				return i
+			}
+
+	</script>
+</body>
+</html>

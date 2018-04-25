@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	.whole{
+		width:60%; height:100%;
+		background-color: #f6f5ec;
+		margin-left: 20%;
+		font-size:20px;
+		margin-top: 8%;
+		line-height: 45px;
+	}
+</style>
+<body>
+<div class="whole">
+	<div style="margin-left: 40%">
+		<b>Please Log In</b>
+	</div>
+	
+	<div>
+		<form name="login" method="post" action="aa.jsp" ">
+			<table style=" width:100% ;table-layout:fixed">
+				<tr>
+					<td align="right">Login:</td>
+					<td colspan="2"><input type="text" size="40"
+					 value="please input your name" onfocus="if (value=='please input your name'){value=''}"
+					 onblur="if(value==''){value='please input your name'}" ></td>
+				</tr>
+				<tr>
+					<td align="right" >Password:</td>
+					<td colspan="2"><input type="password" size="41"></td>
+				</tr>
+				<tr>
+					<td>&nbsp</td>
+					<td align="left">
+						<input type="button" value="OK" >
+						<input type="button" value="Forget Password">
+					</td>
+					<td>&nbsp</td>
+				</tr>
+			</table>
+		</form>
+		
+	</div>
+
+</div>
+</body>
+</html>

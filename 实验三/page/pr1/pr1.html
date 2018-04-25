@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>找零系统</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container-fluid{
+			margin-top: 10vh;
+		}
+		button{
+			margin-top: 2vh;
+			width: 30%;
+		}
+		.jes{
+			margin-top: 10vh;
+			font-size: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+
+  		<div class="row">
+  			<div class="col-md-3"></div>
+  			<div class="col-md-6 ">
+				<input type="number"  class="je form-control"  placeholder="请输入找零金额"/>
+				<button class="btn btn-primary">找零</button>
+				<div class="jes">
+					<div class="50"></div>
+					<div class="20"></div>
+					<div class="10"></div>
+					<div class="5"></div>
+					<div class="1"></div>
+				</div>
+  			</div>
+  			<div class="col-md-3"></div>
+  		</div>
+  	</div>
+  	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  	<script>
+  		$(".btn").click(function () {
+  			var je=$(".je").val();
+  			if(je==""||je==0){
+  				alert("请输入找零金额")
+  			}else{
+  				var i=(je-je%50)/50;  //50   33-33%50  /50  i==0
+	  			var j=((je-i*50)-(je-i*50)%20)/20; //20  j=1
+	  			var k=((je-i*50-j*20)-(je-i*50-j*20)%10)/10; // k  ==1
+	  			var l=((je-i*50-j*20-k*10)-(je-i*50-j*20-k*10)%5)/5;  // 
+	  			var m=je-i*50-j*20-10*k-5*l;  //1
+	  			$(".50").text(i+"张50元");
+	  			$(".20").text(j+"张20元");
+	  			$(".10").text(k+"张10元");
+	  			$(".5").text(l+"张5元");
+	  			$(".1").text(m+"张1元");
+  			}
+  			
+  			
+  
+  		})
+  		
+  	</script>
+</body>
+</html>
