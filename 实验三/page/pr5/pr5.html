@@ -37,49 +37,129 @@
 			background-color: #d98ddd;
 		}
 
+		#number,#data{
+			border:0px;
+			width: 100%;
+			height: 80px;
+			font-size: 30px;
+		}
+		
 	</style>
 </head>
 <body>
 	<div class="content">
-		<div class="ck"></div>
+		<div class="ck">
+			<div  ><input type="text" id="data" ></div>
+			<div ><input type="text"  id="number"> </div>
+
+		</div>
 		<div class="row">
-			<div class="btn" onclick="js('1')">1</div>
-			<div class="btn" onclick="js('2')">2</div>
-			<div class="btn" onclick="js('3')">3</div>
-			<div class="btn" onclick="js('+')">+</div>
+			<div class="btn"  onclick="numer('1')">1</div>
+			<div class="btn"	 onclick="numer('2')">2</div>
+			<div class="btn"  onclick="numer('3')">3</div>
+			<div class="btn"  onclick="caculate('+')"">+</div>
 			<div class="clear"></div>
 
 		</div>
 		<div class="row">
-			<div class="btn" onclick="js('4')">4</div>
-			<div class="btn" onclick="js('5')">5</div>
-			<div class="btn" onclick="js('6')">6</div>
-			<div class="btn" onclick="js('-')">-</div>
+			<div class="btn"  onclick="numer('4')">4</div>
+			<div class="btn"  onclick="numer('5')">5</div>
+			<div class="btn"  onclick="numer('6')">6</div>
+			<div class="btn"  onclick="caculate('-')">-</div>
 			<div class="clear"></div>
 
 		</div>
 		<div class="row">
-			<div class="btn" onclick="js('7')">7</div>
-			<div class="btn" onclick="js('8')">8</div>
-			<div class="btn" onclick="js('9')">9</div>
-			<div class="btn" onclick="js('*')">*</div>
+			<div class="btn"  onclick="numer('7')">7</div>
+			<div class="btn"  onclick="numer('8')">8</div>
+			<div class="btn"  onclick="numer('9')">9</div>
+			<div class="btn" onclick="caculate('*')">*</div>
 			<div class="clear"></div>
 
 		</div>
 		<div class="row">
-			<div class="btn" onclick="js('0')">0</div>
-			<div class="btn" onclick="js('.')">清除</div>
-			<div class="btn" onclick="js('=')">计算</div>
-			<div class="btn" onclick="js('/')">/</div>
+			<div class="btn"  onclick="numer('0')">0</div>
+			<div class="btn"  onclick="caculate('AC')">清除</div>
+			<div class="btn"  onclick="caculate('=')">计算</div>
+			<div class="btn"  onclick="caculate('/')">/</div>
 			<div class="clear"></div>
 
 		</div>
+	
 
 	</div>
 	<script>
-		function js(a) {
-			alert(a);
-		}
+	 var second="";
+    var op="";
+    var first="";
+    var str="";
+    function numer(num){
+    	
+        str+=num;
+        if(op=="="){
+            ac();
+        }
+        second=second+num;
+
+        if(op==""){
+            first=second;
+        }
+        document.getElementById("number").value=second;
+        document.getElementById("data").value=str;
+    }
+
+    function caculate(ch){
+        if(ch=="AC"){
+           ac();
+           return;
+        }
+        cacu();
+        op=ch;
+        str+=op;
+        document.getElementById("number").value=op;
+        document.getElementById("data").value=str;
+        if(op=="="){
+            result();
+        }
+        second="";
+    }
+
+    function cacu(){
+        if(op=="+")
+        {
+            first=Number(first)+Number(second);
+        }
+        if(op=="—")
+        {
+            first=Number(first)-Number(second);
+        }
+        if (op=="*")
+        {
+            first=Number(first)*Number(second);
+        }
+        if(op=="÷"||op=="/")
+        {
+            first=Number(first)/Number(second);
+        }
+        if(op=="%")
+        {
+            first=Number(first)%Number(second);
+        }
+    }
+    function ac(){
+        first="";
+        op="";
+        second="";
+        document.getElementById("number").value="";
+        document.getElementById("data").value="";
+        str="";
+    }
+    function result(){
+        document.getElementById("number").value=first;
+    }
+		
+		
+
 
 	</script>
 </body>
