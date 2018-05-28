@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0 auto;}
+
+.clear{
+	clear: both;
+}
+
+.nav{
+	width: 100vw;
+	height: 8vh;
+	background-color: #36b2a1;
+}
+
+.nav_title{
+	line-height:  8vh;
+	font-size:25px;
+	color: #fff;
+	margin-left: 50px;
+	float: left;
+}
+
+.user{
+	line-height:  8vh;
+	font-size: 25px;
+	color: #fff;
+	margin-right: 50px;
+	float: right;
+}
+.container-fluid{
+	width: 100vw;
+	height:84vh; 
+	padding: 0;
+	margin: 0;
+}
+
+.container_left{
+	width: 20vw;
+	float: left;
+	height:84vh; 
+	border-right: 2px solid #d8d8d8;
+}
+
+.container_right{
+	float: left;
+	width: 80vw;
+	height:84vh; 
+}
+
+.right_item{
+	/*display: none;*/
+}
+
+/*添加学生*/
+.add9{
+width: 70vw;
+	padding: 20px;
+}
+.add9 .add_student .title{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 auto;
+	font-size: 20px;
+	border-left:5px solid #36b2a1;
+	padding-left:10px;
+	margin-left: -30px;
+}
+
+.add9 select,.add9 input{
+	width:20vw;
+	margin-top:10px;
+	margin-left:20vw;
+}
+
+
+
+
+
+/*查看*/
+
+.see1{
+	width:70vw;
+	padding:0 20px;
+}
+
+.see1 .student_input{
+	margin-top: 20px;
+	height: 30PX;
+	line-height: 30PX;
+}
+.see1 .student_input select,.see1 .student_input input{
+	float: left;
+	
+}
+.see1 .student_input select{
+	width: 15vw;
+	margin-left: 3vw;
+}
+.see1 .student_input input{
+	width:80px;
+	margin-left:80px;
+}
+.see1 .see_student{
+	margin-top: 20px;
+	height:50vh;
+}
+.see1 table th,.see1 table{
+	text-align: center;
+}
+
+.see1 .fenye{
+	float:right;
+}
+.see1 .selected{
+	background-color:#36b2a1;
+	color:#fff;
+}
+/*查看学生*/
+.see1 .see_student_title{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 auto;
+	font-size: 20px;
+	border-left:5px solid #36b2a1;
+	padding-left:10px;
+	margin-left: -30px;
+}
+.see1 .see_student_table{
+	margin-top: 20px;
+	height: 60vh;
+	overflow: auto;
+}
+.see1 .table>tbody>tr>td{
+	padding: 5px;
+}
+
+/*搴曢儴*/
+.footer{
+	width: 100vw;
+	height: 8vh;
+	background-color: #36b2a1;
+}
+.footer_text{
+	line-height: 8vh;
+	font-size: 18px;
+	color: #fff;
+	margin-left: 35vw;
+}
